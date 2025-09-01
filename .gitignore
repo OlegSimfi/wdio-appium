@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
+
+# # Appium build artifacts
+# appium.log
+# *.apk
+
+# WebdriverIO
+allure-results/
+allure-report/
+output/
+logs/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+
+# Coverage
+coverage/
+*.lcov
+
+# Misc
+*.swp

@@ -12,7 +12,7 @@ describe('Actions homework', () => {
 
         await expect($('id=io.appium.android.apis:id/txt_query_prefill')).toHaveText('Test value 1');
         await expect($('id=io.appium.android.apis:id/txt_query_appdata')).toHaveText('Test value 2');
-
+ы
         await $('id=io.appium.android.apis:id/txt_query_prefill').clearValue();
         await expect($('id=io.appium.android.apis:id/txt_query_prefill')).toHaveText('');
     });

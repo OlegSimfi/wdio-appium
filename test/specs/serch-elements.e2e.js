@@ -1,3 +1,4 @@
+import { $, browser} from '@wdio/globals'
 
 describe('Search homework', () => {
     it('Get Element by Accessibility ID', async () => {

@@ -12,6 +12,6 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
     "start-emulator": "emulator -avd Pixel_4",
-    "test": "npx wdio run ./wdio.conf.js --spec registration.e2e.js"
+    "test": "npx wdio run ./wdio.conf.js --spec ./test/pom-tests/sign-in.e2e.js"
   } 
 }

@@ -1,8 +1,8 @@
 import { $, browser, driver, expect } from '@wdio/globals' 
-import HomeScreen from '../specs/page-objects/screens/HomeScreen.js'
-import SignInForm from '../specs/page-objects/forms/SignInForm.js'
-import SignUpForm from '../specs/page-objects/forms/SignUpForm.js'
-import ForgotPasswordForm from '../specs/page-objects/forms/ForgotPasswordForm.js'
+import HomeScreen from '../page-objects/screens/HomeScreen.js'
+import SignInForm from '../page-objects/forms/SignInForm.js'
+import SignUpForm from '../page-objects/forms/SignUpForm.js'
+import ForgotPasswordForm from '../page-objects/forms/ForgotPasswordForm.js'
 
 describe('Log in tests', () => {
 

@@ -3,6 +3,7 @@ import HomeScreen from '../page-objects/screens/HomeScreen.js'
 import SignInForm from '../page-objects/forms/SignInForm.js'
 import SignUpForm from '../page-objects/forms/SignUpForm.js'
 import ForgotPasswordForm from '../page-objects/forms/ForgotPasswordForm.js'
+import GarageScreen from '../page-objects/screens/GarageScreen.js' 
 
 describe('Log in tests', () => {
 
@@ -34,8 +35,8 @@ describe('Log in tests', () => {
     });
 
     afterEach(async () => {
-        if (await $('//android.widget.TextView[@text="Garage"]').isDisplayed()) {
-            await $('//android.widget.TextView[@text="My profile"]').click();
+        if (await GarageScreen.screenTitle.isDisplayed()) {
+            await GarageScreen.clickMenuDropdown();
             await clickMenuItemByIndex(5);
         }
         await driver.terminateApp('com.hillelAuto');
@@ -46,7 +47,7 @@ describe('Log in tests', () => {
         await SignInForm.setEmail('michael.krasnovskyi+testUser1@gmail.com');
         await SignInForm.setPassword('ZSgeVQhuU3qkvlG');
         await SignInForm.clickLoginButton();
-        await expect($('//android.widget.TextView[@text="Garage"]')).toBeDisplayed();
+        await expect(GarageScreen.screenTitle).toBeDisplayed();
     });
 
     it('Log in with incorrect credentials', async () => {

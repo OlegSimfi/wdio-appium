@@ -15,7 +15,7 @@ const selectBrandByIndex = async (index) => {
         const clickY = menuTopY + index * menuItemHeight + Math.floor(menuItemHeight / 2);
 
         await driver.action('pointer').move(clickX, clickY)
-            .down()
+            .down() 
             .pause(100)
             .up()
             .perform();
